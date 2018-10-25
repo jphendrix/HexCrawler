@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Hex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="hexagon.js"></script>
+    <script src="player.js"></script>
+    <script src="crawler.js"></script>
+    
+    <style>
+    .dice
+    {
+        width:100px;
+        height:100px;
+        display: inline-block;
+    }
+    .dice_graphic
+    {
+       display: inline-block;
+    }
+    .input
+    {
+       vertical-align: top;
+       display: inline-block;
+    }
+    td
+    {
+        border-style:groove;
+        border-width:thin;
+    }
+    
+    th.row_header{text-align:left;}
+    .d1{background:url('dice.png') -1px -1px;}
+    .d2{background:url('dice.png') -100px -1px;}
+    .d3{background:url('dice.png') -200px -1px;}
+    .d4{background:url('dice.png') -300px -1px;}
+    .d5{background:url('dice.png') -400px -1px;}
+    .d6{background:url('dice.png') -501px -1px;}
+    
+    span.pips{
+        font-weight:bold;
+        font-size:x-large;
+    }
+    
+    span.pips.red{
+        color:red;
+    }
+    
+    span.pips.blue{
+        color:blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="dice_graphic">
+        <div class="dice d6"></div>
+        <div class="dice d6"></div>
+        <span class="pips"></span>
+    </div>
+</body>
